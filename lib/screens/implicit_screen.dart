@@ -6,6 +6,7 @@ import 'package:flutter_animation/animation/implicit/animated_opacity.dart';
 import 'package:flutter_animation/animation/implicit/animated_padding.dart';
 import 'package:flutter_animation/animation/implicit/animated_physical_model.dart';
 import 'package:flutter_animation/animation/implicit/animated_position.dart';
+import 'package:flutter_animation/animation/implicit/animated_random_container.dart';
 import 'package:flutter_animation/animation/implicit/animated_size.dart';
 import 'package:flutter_animation/animation/implicit/tween_animation_builder.dart';
 import 'package:flutter_animation/widgets/custom_text_button.dart';
@@ -58,6 +59,13 @@ class ImplicitScreen extends StatelessWidget {
                   function: () =>
                       navigateTo(context, const AnimatedContainerAnimation()),
                   buttonText: "Animated Container",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () =>
+                      navigateTo(context, const AnimatedRandomContainer()),
+                  buttonText: "Animated Random Container",
                   icon: Icons.animation_outlined,
                 ),
                 const SizedBox(height: 20.0),
