@@ -50,29 +50,15 @@ class ImplicitScreen extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 customTextButton(
                   function: () =>
+                      navigateTo(context, const AnimatedSizeAnimation()),
+                  buttonText: "Animated Size",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () =>
                       navigateTo(context, const AnimatedAlignAnimation()),
                   buttonText: "Animated Align",
-                  icon: Icons.animation_outlined,
-                ),
-                const SizedBox(height: 20.0),
-                customTextButton(
-                  function: () =>
-                      navigateTo(context, const AnimatedContainerAnimation()),
-                  buttonText: "Animated Container",
-                  icon: Icons.animation_outlined,
-                ),
-                const SizedBox(height: 20.0),
-                customTextButton(
-                  function: () =>
-                      navigateTo(context, const AnimatedRandomContainer()),
-                  buttonText: "Animated Random Container",
-                  icon: Icons.animation_outlined,
-                ),
-                const SizedBox(height: 20.0),
-                customTextButton(
-                  function: () => navigateTo(
-                      context, const AnimatedDefaultTextStyleAnimation()),
-                  buttonText: "Animated Default Text Style",
                   icon: Icons.animation_outlined,
                 ),
                 const SizedBox(height: 20.0),
@@ -85,8 +71,22 @@ class ImplicitScreen extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 customTextButton(
                   function: () =>
+                      navigateTo(context, const AnimatedPositionAnimation()),
+                  buttonText: "Animated Position",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () =>
                       navigateTo(context, const AnimatedPaddingAnimation()),
                   buttonText: "Animated Padding",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () =>
+                      navigateTo(context, const AnimatedContainerAnimation()),
+                  buttonText: "Animated Container",
                   icon: Icons.animation_outlined,
                 ),
                 const SizedBox(height: 20.0),
@@ -99,22 +99,22 @@ class ImplicitScreen extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 customTextButton(
                   function: () =>
-                      navigateTo(context, const AnimatedPositionAnimation()),
-                  buttonText: "Animated Position",
-                  icon: Icons.animation_outlined,
-                ),
-                const SizedBox(height: 20.0),
-                customTextButton(
-                  function: () =>
-                      navigateTo(context, const AnimatedSizeAnimation()),
-                  buttonText: "Animated Size",
-                  icon: Icons.animation_outlined,
-                ),
-                const SizedBox(height: 20.0),
-                customTextButton(
-                  function: () =>
                       navigateTo(context, const TweenAnimationBuilderWidget()),
                   buttonText: "Tween Animation Builder",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () => navigateTo(
+                      context, const AnimatedDefaultTextStyleAnimation()),
+                  buttonText: "Animated Default Text Style",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () =>
+                      navigateTo(context, const AnimatedRandomContainer()),
+                  buttonText: "Animated Random Container",
                   icon: Icons.animation_outlined,
                 ),
               ],

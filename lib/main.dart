@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Animation',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const SplashAnimationSliderState(),
+      home: const SplashAnimationScreen(),
     );
   }
 }

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/screens/home_screen.dart';
 
-class SplashAnimationSliderState extends StatefulWidget {
-  const SplashAnimationSliderState({super.key});
+class SplashAnimationScreen extends StatefulWidget {
+  const SplashAnimationScreen({super.key});
 
   @override
-  State<SplashAnimationSliderState> createState() =>
-      _SplashAnimationSliderStateState();
+  State<SplashAnimationScreen> createState() => _SplashAnimationScreenState();
 }
 
-class _SplashAnimationSliderStateState extends State<SplashAnimationSliderState>
+class _SplashAnimationScreenState extends State<SplashAnimationScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller =
       AnimationController(vsync: this, duration: const Duration(seconds: 2))

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/animation/explicit/align_transition_animation.dart';
+import 'package:flutter_animation/animation/explicit/bouncing_with_scaling_animation.dart';
 import 'package:flutter_animation/animation/explicit/simple_one_animation.dart';
 import 'package:flutter_animation/screens/add_item_to_listview_animation.dart';
 import 'package:flutter_animation/screens/ball_screen_animation.dart';
@@ -45,8 +46,14 @@ class ExplicitScreen extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 customTextButton(
                   function: () =>
-                      navigateTo(context, const SimpleOneAnimation()),
-                  buttonText: "Explicit Animation Example (1)",
+                      navigateTo(context, const BallLoadingAnimation()),
+                  buttonText: "Ball animation",
+                  icon: Icons.animation_outlined,
+                ),
+                const SizedBox(height: 20.0),
+                customTextButton(
+                  function: () => navigateTo(context, const ListViewScreen()),
+                  buttonText: "ListView animation",
                   icon: Icons.animation_outlined,
                 ),
                 const SizedBox(height: 20.0),
@@ -58,8 +65,9 @@ class ExplicitScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20.0),
                 customTextButton(
-                  function: () => navigateTo(context, const ListViewScreen()),
-                  buttonText: "ListView animation",
+                  function: () =>
+                      navigateTo(context, const SimpleOneAnimation()),
+                  buttonText: "Explicit Animation Example (1)",
                   icon: Icons.animation_outlined,
                 ),
                 const SizedBox(height: 20.0),
@@ -72,8 +80,8 @@ class ExplicitScreen extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 customTextButton(
                   function: () =>
-                      navigateTo(context, const BallLoadingAnimation()),
-                  buttonText: "Ball animation",
+                      navigateTo(context, const BouncingWithScalingAnimation()),
+                  buttonText: "Bouncing With Scaling Animation",
                   icon: Icons.animation_outlined,
                 ),
               ],
